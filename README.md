@@ -2,9 +2,11 @@
 
 EventHub is a full-stack web application for discovering events and booking seats instantly. It features a modern, responsive user interface with glassmorphism styling, a secure JWT-based authentication system, and a robust transaction-safe booking engine.
 
-## 🚀 Deployed Links
-- **Frontend (Vercel)**: [https://eventhub082.vercel.app](https://eventhub082.vercel.app)
-- **Backend API (Railway)**: [https://eventhub082-production.up.railway.app](https://eventhub082-production.up.railway.app)
+## 🚀 Live Demo
+
+🌐 **[https://eventhub082.vercel.app](https://eventhub082.vercel.app)**
+
+> Frontend deployed on Vercel · Backend API deployed on Railway · Database hosted on Railway PostgreSQL
 
 ---
 
