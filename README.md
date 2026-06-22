@@ -138,3 +138,16 @@ When a booking is requested:
 ### Frontend (Vercel)
 - Environment variable `VITE_API_BASE_URL` is set to `https://eventhub082-production.up.railway.app/api/v1`.
 - Root Directory is set to `frontend`.
+
+## Assumptions
+- No admin panel; events are managed via the seed script directly
+- A user can book the same event multiple times (each creates a separate booking)
+- Cancellation is immediate with no grace period or refund logic
+- Authentication tokens are stored in localStorage for simplicity
+
+## Design Decisions
+- **Prisma transactions** used for booking to prevent race conditions and overbooking
+- **PostgreSQL** chosen over MongoDB for ACID guarantees on seat inventory
+- **Express-validator** for input validation on all endpoints
+- **Axios interceptors** handle 401 responses globally, auto-redirecting to login
+- **React Context** for auth state to avoid prop drilling across pages
