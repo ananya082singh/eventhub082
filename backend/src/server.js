@@ -1,4 +1,12 @@
 require('dotenv').config();
+// Catch hidden crashes
+process.on('uncaughtException', (err) => {
+  console.error('UNCAUGHT EXCEPTION', err);
+});
+
+process.on('unhandledRejection', (err) => {
+  console.error('UNHANDLED REJECTION', err);
+});
 
 const express = require('express');
 const cors = require('cors');
