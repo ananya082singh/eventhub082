@@ -1,6 +1,6 @@
 const jwt = require('jsonwebtoken');
 
-const JWT_SECRET = process.env.JWT_SECRET;
+const JWT_SECRET = process.env.JWT_SECRET || process.env.JWT_KEY || 'supersecretkey123!@#eventhub';
 const JWT_EXPIRES_IN = '7d';
 
 /**
