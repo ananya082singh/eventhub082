@@ -4,6 +4,7 @@
   "description": "Backend API for Event Booking System",
   "main": "src/server.js",
   "scripts": {
+    "postinstall": "prisma generate",
     "build": "prisma generate",
     "dev": "node --watch src/server.js",
     "start": "node src/server.js",
