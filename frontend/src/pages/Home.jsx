@@ -51,8 +51,8 @@ export default function Home() {
     <div className="animate-fade-in">
       {/* Hero Section */}
       <div className="text-center mb-10">
-        <h1 className="text-4xl md:text-5xl font-bold mb-3">
-          <span className="gradient-text">Discover Events</span>
+        <h1 className="text-4xl md:text-5xl font-extrabold mb-3 text-white tracking-tight">
+          Discover Events
         </h1>
         <p className="text-surface-400 text-lg max-w-2xl mx-auto">
           Browse upcoming events and book your seats instantly.
