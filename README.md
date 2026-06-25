@@ -6,7 +6,7 @@ EventHub is a full-stack web application for discovering events and booking seat
 
 🌐 **[https://eventhub082.vercel.app](https://eventhub082.vercel.app)**
 
-> Frontend deployed on Vercel · Backend API deployed on Railway · Database hosted on Railway PostgreSQL
+> Frontend deployed on Vercel · Backend API deployed on vercel · Database hosted on Railway PostgreSQL
 
 ---
 
@@ -132,9 +132,9 @@ When a booking is requested:
 
 ## 🌐 Deployment Configuration
 
-### Backend (Railway)
-- Expose the server using `PORT` (Railway's proxy defaults to `8080`).
-- Ensure variables like `DATABASE_URL` (internal PostgreSQL hostname) and `JWT_SECRET` are configured.
+### Backend (Vercel)
+- Expose the server using `PORT` (defaults to `5000`).
+- Ensure variables like `DATABASE_URL` (Public PostgreSQL hostname) and `JWT_SECRET` are configured.
 - Root Directory must be set to `backend` in Railway settings.
 
 ### Frontend (Vercel)
